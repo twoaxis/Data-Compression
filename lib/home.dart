@@ -1,5 +1,5 @@
-import 'package:data_compression/delta_compression.dart';
 import 'package:flutter/material.dart';
+import 'package:data_compression/delta_compression.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,17 +11,31 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final TextEditingController _inputController = TextEditingController();
 
-  final Map<String, String> _codes = {};
-  final bool _isProcessed = false;
-  final int _originalSize = 0;
-  final int _compressedSize = 0;
+  bool _isProcessed = false;
+  int _originalSize = 0;
+  int _compressedSize = 0;
+  String _compressedData = '';
+
+  void _compressText() {
+    String input = _inputController.text;
+    if (input.isEmpty) return;
+
+    String compressed = compressDelta(input);
+
+    setState(() {
+      _isProcessed = true;
+      _compressedData = compressed;
+      _originalSize = input.length * 8; // 8 bits per ASCII character
+      _compressedSize = compressed.length;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TwoAxis Delta Compression'),
-        backgroundColor: Color(0xffA72222),
+        title: const Text('Delta Compression'),
+        backgroundColor: const Color(0xffA72222),
         foregroundColor: Colors.white,
       ),
       body: Padding(
@@ -43,25 +57,23 @@ class _HomeState extends State<Home> {
                   decoration: InputDecoration(
                     hintText: 'Type your text here...',
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xff252525)),
+                      borderSide: const BorderSide(color: Color(0xff252525)),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     filled: true,
-                    fillColor: Color(0xff161616),
+                    fillColor: const Color(0xff161616),
                   ),
                   minLines: 3,
                   maxLines: 5,
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
               const SizedBox(height: 16),
               Center(
                 child: ElevatedButton(
-                  onPressed: () {
-                    print(compress_delta(_inputController.text));
-
-                  },
+                  onPressed: _compressText,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xffA72222),
+                    backgroundColor: const Color(0xffA72222),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 32,
@@ -82,48 +94,43 @@ class _HomeState extends State<Home> {
                 ),
                 const SizedBox(height: 16),
 
-                Row(
-                  children: [
-                    Expanded(
-                      flex: _originalSize,
-                      child: Container(
-                        height: 30,
-                        color: Colors.red,
-                        alignment: Alignment.center,
-                        child: Text(
-                          'Original: $_originalSize bits',
-                          style: const TextStyle(color: Colors.white),
-                          overflow: TextOverflow.ellipsis,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: _originalSize,
+                        child: Container(
+                          height: 30,
+                          color: Color(0xffA72222),
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Original: $_originalSize bits',
+                            style: const TextStyle(color: Colors.white),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 4),
-                    Expanded(
-                      flex: _compressedSize,
-                      child: Container(
-                        height: 30,
-                        color: Colors.green,
-                        alignment: Alignment.center,
-                        child: Text(
-                          'Compressed: $_compressedSize bits',
-                          style: const TextStyle(color: Colors.white),
-                          overflow: TextOverflow.ellipsis,
+                      const SizedBox(width: 8),
+                      Expanded(
+                        flex: _compressedSize,
+                        child: Container(
+                          height: 30,
+                          color: Colors.green,
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Compressed: $_compressedSize bits',
+                            style: const TextStyle(color: Colors.white),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 16),
-
                 Text(
-                  'data compression',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  'Space Saved: ',
+                  'Space Saved: ${_originalSize - _compressedSize} bits',
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -131,54 +138,21 @@ class _HomeState extends State<Home> {
                 ),
 
                 const SizedBox(height: 24),
-
                 const Text(
-                  'Encoded Binary:',
+                  'Compressed Binary Output:',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
                 Container(
+                  width: 500,
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: Text('data'),
-                ),
-
-                const SizedBox(height: 24),
-
-                const Text(
-                  'Huffman Codes:',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 8),
-                Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children:
-                        _codes.entries.map((entry) {
-                          return Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.blue[100],
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            child: Text(
-                              "'${entry.key == ' ' ? 'space' : entry.key}': ${entry.value}",
-                              style: const TextStyle(fontFamily: 'monospace'),
-                            ),
-                          );
-                        }).toList(),
+                  child: Text(
+                    _compressedData,
+                    style: const TextStyle(color: Color(0xff161616)),
                   ),
                 ),
               ],

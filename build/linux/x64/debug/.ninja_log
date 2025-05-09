@@ -1,29 +1,56 @@
 # ninja log v5
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/libflutter_linux_gtk.so	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_engine.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_value.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_view.h	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	c72ca55446217439
-1	13114	0	flutter/_phony_	c72ca55446217439
-1	13114	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/build/linux/x64/debug/flutter/_phony_	c72ca55446217439
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	564e105092130582
+3073	4005	1746788617465468777	runner/CMakeFiles/data_compression.dir/my_application.cc.o	7dd81447f983c786
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_view.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_value.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	564e105092130582
+3073	3989	1746788617447463060	runner/CMakeFiles/data_compression.dir/__/flutter/generated_plugin_registrant.cc.o	17f28fbab2364ad
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/build/linux/x64/debug/flutter/_phony_	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/libflutter_linux_gtk.so	564e105092130582
+8	3072	0	flutter/_phony_	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	564e105092130582
 13114	13874	1746736524224787376	runner/CMakeFiles/data_compression.dir/main.cc.o	41ed26deef2fce1a
-13114	13932	1746736524282734651	runner/CMakeFiles/data_compression.dir/__/flutter/generated_plugin_registrant.cc.o	17f28fbab2364ad
-13114	13958	1746736524306712833	runner/CMakeFiles/data_compression.dir/my_application.cc.o	7dd81447f983c786
-13958	14146	1746736524498538292	intermediates_do_not_run/data_compression	bf74f7dfe9c85e36
-14147	14275	0	CMakeFiles/install.util	e0261fa1cb66cbb1
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	564e105092130582
+4006	4206	1746788617668533245	intermediates_do_not_run/data_compression	bf74f7dfe9c85e36
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	564e105092130582
+4206	4381	0	CMakeFiles/install.util	e0261fa1cb66cbb1
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_engine.h	564e105092130582
+8	3072	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/libflutter_linux_gtk.so	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_engine.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_value.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/fl_view.h	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	564e105092130582
+8	5474	0	flutter/_phony_	564e105092130582
+8	5474	0	/home/ahmed-helmy/Developer/fci projects/Data-Compression/build/linux/x64/debug/flutter/_phony_	564e105092130582
+5475	6165	1746790014483694832	runner/CMakeFiles/data_compression.dir/__/flutter/generated_plugin_registrant.cc.o	17f28fbab2364ad
+5474	6206	1746790014523697553	runner/CMakeFiles/data_compression.dir/my_application.cc.o	7dd81447f983c786
+6206	6394	1746790014714710546	intermediates_do_not_run/data_compression	bf74f7dfe9c85e36
+6394	6543	0	CMakeFiles/install.util	e0261fa1cb66cbb1
