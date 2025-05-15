@@ -6,7 +6,7 @@
         <entry key="blocLanguageServer">
           <value>
             <LanguageServerDefinitionSettings>
-              <option name="errorReportingKind" value="none" />
+              <option name="errorReportingKind" value="in_log" />
             </LanguageServerDefinitionSettings>
           </value>
         </entry>
