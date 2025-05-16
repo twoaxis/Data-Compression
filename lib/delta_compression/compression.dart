@@ -1,4 +1,6 @@
 Map compressDelta(String input) {
+
+  input = input.replaceAll(" ", "`");
   String output = "";
   output += letterToAsciiBinary(input[0]);
 

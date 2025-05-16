@@ -20,5 +20,5 @@ String decompressDelta(String input, int bitWidth) {
     output += String.fromCharCode(code);
   }
 
-  return output;
+  return output.replaceAll("`", " ");
 }
