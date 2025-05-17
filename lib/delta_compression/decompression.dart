@@ -1,4 +1,9 @@
-String decompressDelta(String input, int bitWidth) {
+import 'package:data_compression/delta_compression/compression.dart';
+
+String decompressDelta(String inputEncrypted, int bitWidth) {
+
+  String input = encryptBinaryOutput(inputEncrypted, bitWidth);
+
   List<int> characterCodes = [int.parse(input.substring(0, 8), radix: 2)];
   String output = String.fromCharCode(characterCodes[0]);
 

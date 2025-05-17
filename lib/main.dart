@@ -11,7 +11,7 @@ class DeltaCompression extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Huffman Coding',
+      title: 'Delta Coding',
       theme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
       home: Home(),
       debugShowCheckedModeBanner: false,

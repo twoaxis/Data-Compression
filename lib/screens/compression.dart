@@ -21,16 +21,22 @@ class _CompressionScreenState extends State<CompressionScreen> {
     String input = _inputController.text;
     if (input.isEmpty) return;
 
-    Map compressed = compressDelta(input);
+    final compressed = compressDelta(input);
+    final String rawOutput = compressed["output"];
+    final int bitWidth = compressed["bitWidth"];
+
+    final String encrypted = encryptBinaryOutput(rawOutput, bitWidth);
 
     setState(() {
       _isProcessed = true;
-      _compressedData = compressed["output"];
+      _compressedData = encrypted;
       _originalSize = input.length * 8;
-      bitWidth = compressed["bitWidth"];
-      _compressedSize = compressed["output"].length;
+      _compressedSize = encrypted.length;
+      this.bitWidth = bitWidth;
     });
   }
+
+
 
   @override
   Widget build(BuildContext context) {
